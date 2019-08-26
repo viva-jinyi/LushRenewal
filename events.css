@@ -1,0 +1,448 @@
+*{margin: 0; padding: 0;}
+body{overflow-x: hidden; overflow-y: auto;}
+
+@font-face{
+    font-family: "Lush";
+    src:url("fonts/Lush.ttf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Alliance";
+    src:url("fonts/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*header*/
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+}
+.menu_wrapper{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    left: 50%;
+    margin-left: -600px;
+}
+.menu_bar{
+    width: 416px;
+    height: 60px;
+    margin-left: -60px;
+    display: flex;
+}
+.menu_bar li{
+    font-size:20px;
+    font-family: Lush;
+    margin: 15px 55px;
+    padding: 0 0 25px 25px;
+    color: white;
+    list-style: none;
+    /* position: relative;
+    left: 50%; */
+}
+.menu_bar li a:link{
+    color: white; text-decoration: none;
+}
+.menu_bar li a:visited{
+    color:white; text-decoration: none;
+}
+.menu_bar li a:hover{
+    color: white; text-decoration: none;
+}
+.lush_logo{
+    width: 416px;
+    height: 60px;
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    background-position-x: 50%;
+    margin: 12px 0 3px 0;
+    /* position: relative;
+    left: 25%; */
+}
+.lush_logo a div{
+    width: 100%;
+    height: 100%;
+}
+.menu_aside{
+    width: 460px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    right: -15%;
+}
+.menu_aside div{
+    width: 27px;
+    height: 80px;
+    margin: 16px 0 3px 35px;
+}
+.menu_user{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/account.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.menu_cart{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/basket-main.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.menu_shops{
+    width: 100%;
+    height: 100%;
+}
+.menu_products{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.menu_search{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/search.svg);
+    background-repeat: no-repeat;
+    background-size: 20px; 
+}
+.products_list li div a:link{
+    color: white; text-decoration: none;
+}
+.products_list li div a:visited{
+    color:white; text-decoration: none;
+}
+.products_list li div a:hover{
+    color: white; text-decoration: none;
+}
+.products_list{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    background-color: black;
+    opacity: 0.8;
+    /* top: -1000%; */
+    cursor: pointer;
+}
+.products_list ul{
+    width: 1252px;
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 50%;
+    z-index:200;
+    margin-left: -445px;
+}
+.products_list > ul > li > div{
+    font-family: Lush;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+    border-bottom: 2px white solid;
+    text-align: center;
+    letter-spacing: 0.6px;
+    margin: 8px 15px;
+}
+.products_list > ul > li > span{
+    display: block;
+    font-family: Alliance;
+    font-size: 18px;
+    line-height: 40px;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    color: white;
+    margin: 0 15px;
+}
+/* section */
+.section_wrapper{
+    width: 100%;
+    height: auto;
+}
+.section_first{
+    padding-top: 60px;
+    width: 100%;
+    height: 500px;
+    /*margin: 0 auto;*/
+    display: flex;
+}
+.section_first .firstbox{
+    padding-top: 60px;
+    width: 50%;
+    height: 500px;
+    background-color: aqua;
+}
+.section_first .secondbox{
+    padding-top: 60px;
+    width: 50%;
+    height: 500px;
+    background-color: blueviolet;
+}
+.events_wrapper{
+    width: 100%;
+    height: auto;
+}
+.events_wrapper{
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.events_wrapper h2{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: black;
+    font-family: Lush;
+    font-size: 60px;
+    text-align: center;
+}
+.events .slide{
+    width: 1252px;
+    height: 400px;
+    margin: 0 auto;
+}
+.events .slide1{
+    background-image: url(imgs/eventsfirst.jpg);
+    /* background-color: skyblue; */
+    background-repeat: no-repeat;    
+    background-size: 100% auto;
+    background-position-y: -200px;
+}
+.events .slide2{
+    background-image: url(imgs/eventssecond.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    background-size: 100% auto;
+}
+.events .slide3{
+    background-image: url(imgs/eventsthird.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: -200px;
+}
+.events .slide3 ~ h2{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: 110px;
+    font-family: Lush;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+/* .events .slide3 ~ div{
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: 260px;
+    font-family: Lush;
+    font-size: 60px;
+    letter-spacing: 5px;
+    background-image: url(imgs/yellowbrush.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.events .slide3 ~ p{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: 35px;
+    font-family: Alliance;
+    font-size: 30px;
+    font-weight: 800;
+} */
+
+.events-pagination{
+    width: 500px;
+    height: auto;
+    position: relative;
+    z-index : 1000;
+    text-align: center;
+    top: -30px !important; 
+    /* margin-bottom: 5px; */
+    left: 0% !important;/* css 이후에 생기므로 important 필요 */
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+    background-color: white;
+}
+
+/* section second */
+.section_second{
+    width: 1252px;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    position: relative;
+}
+.section_second .box{
+    display: inline-block;
+    /* margin: 5px 5px; */
+}
+.box1{
+    width: 500px;
+    height: 700px;
+    background-color: black;
+    background-image: url(imgs/hot3.png);
+    background-size: auto 100%;
+    background-position-x: -80px;
+    margin-bottom: -5px;
+}
+.box2{
+    width: calc( ( 1252px - 500px ) / 2 );
+    height: calc( 700px - 235px );
+    background-image: url(imgs/lemon.jpg);
+    background-size: 220% auto;
+    background-position: center;
+    position: absolute;
+    top: 0;
+}
+
+.box4{
+    width: calc( ( 1252px - 500px ) / 2 );
+    height: calc( 700px - 235px );
+    background-image: url(imgs/notwrap.png);
+    background-size: auto 100%;
+    background-position: center;
+    /* background-position-x:-160px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box5{
+    width: calc( 1252px - 500px );
+    height: 235px;
+    background-image: url(imgs/Naked-banner.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
+    position: absolute;
+    bottom: 0;
+}
+/* section third */
+.section_third{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background-image: url("https://res.cloudinary.com/lush/image/upload/s--dZORbwbN--/c_fill,q_jpegmini,w_1800/v1/lush_website_hk/articles/hero/2018/07/_kww8691.jpg?itok=GVr7Lprd");
+    position: relative;
+}
+.lushparty{
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 500px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    box-shadow: 0.5px 0.5px 2px 1px black;
+}
+.lushparty h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: Lush;
+    color: white;
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    margin: 0 auto;
+    text-shadow: 0.5px 0.5px 3px black;
+}
+/* section fourth */
+.section_fourth{
+    width: 1252px;
+    height: 450px;
+    margin: 0 auto;
+    /* background-color: dodgerblue; */
+    padding: 100px 0;
+    /* border: 1px solid tomato; */
+    padding-left: 5px;
+}
+.section_fourth div{
+    width: 400px;
+    height: 450px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 0 5px;
+}
+.spa1{
+    background-image: url(imgs/spa1.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+.spa2{
+    background-image: url(imgs/spa2.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+.spa3{
+    background-image: url(imgs/spa3.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+/* footer  */
+
+.footer_wrapper{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+.footer_icons{
+    width: 1252px;
+    height: 171px;
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/sprites/footer-icon-sprite.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    margin-left: -550px;
+    margin-top: 10px;
+  }
+.footer_info{
+    width: 100%;
+    height: 417px;
+    background-color: black;
+    color: white;
+}
+.footer_info_wrpper{
+    width: 1252px;
+    height: 417px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+.footer_info_wrpper ul{
+    list-style: none;
+    display: flex;
+    padding: 50px 0 0 50px;
+}
+.footer_info_wrpper li{
+    font-family: Alliance;
+    padding: 0 50px;
+    line-height: 30px;
+}
+.footer_info_wrpper h4{
+    font-weight: 900;
+    font-size: 20px;
+}
+.footer_info_wrpper p{
+    font-weight: 500;
+    font-size: 15px;
+    color: gray;
+}
+.footer_info_wrpper li > div{
+    width: 300px;
+    height: 48px;
+    margin-top: 25px;
+    background-size: 100% auto;
+    background-color: white;
+    background-image: url(imgs/footer_info.png);
+    background-repeat: no-repeat;
+}

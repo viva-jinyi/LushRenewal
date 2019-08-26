@@ -1,0 +1,928 @@
+*{margin: 0; padding: 0;}
+body{overflow-x: hidden; overflow-y: auto;}
+
+@font-face{
+    font-family: "Lush";
+    src:url("fonts/Lush.ttf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Alliance";
+    src:url("fonts/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*header*/
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+}
+.menu_wrapper{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    left: 50%;
+    margin-left: -600px;
+}
+.menu_bar{
+    width: 416px;
+    height: 60px;
+    margin-left: -60px;
+    display: flex;
+}
+.menu_bar li{
+    font-size:20px;
+    font-family: Lush;
+    margin: 15px 55px;
+    padding: 0 0 25px 25px;
+    color: white;
+    list-style: none;
+    /* position: relative;
+    left: 50%; */
+}
+.menu_bar li a:link{
+    color: white; text-decoration: none;
+}
+.menu_bar li a:visited{
+    color:white; text-decoration: none;
+}
+.menu_bar li a:hover{
+    color: white; text-decoration: none;
+}
+.lush_logo{
+    width: 416px;
+    height: 60px;
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    background-position-x: 50%;
+    margin: 12px 0 3px 0;
+    /* position: relative;
+    left: 25%; */
+}
+.lush_logo > a > div{
+    width: 100%;
+    height: 100%;
+}
+.menu_aside{
+    width: 460px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    right: -15%;
+}
+.menu_aside div{
+    width: 27px;
+    height: 80px;
+    margin: 16px 0 3px 35px;
+}
+.menu_user{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/account.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.menu_cart{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/basket-main.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.menu_shops{
+    width: 100%;
+    height: 100%;
+}
+.menu_products{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.menu_search{
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/search.svg);
+    background-repeat: no-repeat;
+    background-size: 20px; 
+}
+.products_list li div a:link{
+    color: white; text-decoration: none;
+}
+.products_list li div a:visited{
+    color:white; text-decoration: none;
+}
+.products_list li div a:hover{
+    color: white; text-decoration: none;
+}
+.products_list{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    background-color: black;
+    opacity: 0.8;
+    /* top: -1000%; */
+    cursor: pointer;
+}
+.products_list ul{
+    width: 1252px;
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 50%;
+    z-index:200;
+    margin-left: -445px;
+}
+.products_list > ul > li > div{
+    font-family: Lush;
+    font-size: 18px;
+    line-height: 35px;
+    color: white;
+    border-bottom: 2px white solid;
+    text-align: center;
+    letter-spacing: 0.6px;
+    margin: 8px 15px;
+}
+.products_list > ul > li > span{
+    display: block;
+    font-family: Alliance;
+    font-size: 18px;
+    line-height: 40px;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    color: white;
+    margin: 0 15px;
+}
+
+/*section */ 
+
+.section{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+
+/*section_first*/
+
+.banner .slide a:link{
+    color: inherit; 
+    text-decoration: none;
+}
+.banner .slide a:visited{
+    color: inherit; 
+    text-decoration: none;
+}
+.banner .slide a:hover{
+    color: inherit; 
+    text-decoration: none;
+}
+.banner .slide{
+    width : 100%;
+    height : 650px;
+}
+.banner .s1_overlay{
+    background: linear-gradient(transparent,black);
+    opacity: 0.3;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+}
+.banner .slide1{
+    background-image: url(https://res.cloudinary.com/lush/image/upload/s--H2SdBd8G--/c_fill,q_jpegmini,w_1800/v1/lush_website_uk/category/hero/ps15-30_gift_hero_banner-1.jpg?itok=Do-hyJHy);
+    background-size: 100% auto;
+    background-position-y: -350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.banner .slide1 h1,h2{
+    text-align: center;
+    line-height: 50px;
+}
+.banner .slide1 h1{
+    position: relative;
+    top: 230px;
+    color: white;
+    font-family: Lush;
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: 13px;
+    text-shadow: 5px 5px 1px black;
+}
+.banner .slide1 h2{
+    position: relative;
+    top: 300px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    text-shadow: 5px 5px 1px white;
+}
+.banner .s3_overlay{
+    background: linear-gradient(transparent,black);
+    opacity: 0.3;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+}
+.banner .slide3{
+    background-image: url(https://res.cloudinary.com/lush/image/upload/s--u1EFh5Y3--/c_fill,q_jpegmini,w_1800/v1/lush_website_uk/category/hero/sun_care_05.jpg?itok=sO_hxNZJ);
+    background-size: 100% auto;
+    background-position-y: -400px;
+    background-repeat: no-repeat;
+}
+.banner .slide3 h1,h2{
+    text-align: center;
+    line-height: 50px;
+}
+.banner .slide3 h1{
+    position: relative;
+    top: 230px;
+    color: white;
+    font-family: Lush;
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: 13px;
+    text-shadow: 5px 5px 1px black;
+}
+.banner .slide3 h2{
+    position: relative;
+    top: 300px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    text-shadow: 5px 5px 1px white;
+}
+.banner .s2_overlay{
+    background: linear-gradient(transparent,black);
+    opacity: 0.3;
+    position: absolute;
+    top: 300px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+}
+.banner .slide2{
+    background-image: url(https://res.cloudinary.com/lush/image/upload/s--d2IeAnwJ--/c_fill,q_jpegmini,w_1800/v1/lush_content/products/hero/2019/04/american_cream_solid_conditioner_lush_labs_2019_01.jpg?itok=TrO-OqhZ);
+    background-size: 100% auto;
+    background-position-y: -310px;
+    background-repeat: no-repeat;
+}
+.banner .slide2 h1,h2{
+    text-align: center;
+    line-height: 50px;
+}
+.banner .slide2 h1{
+    position: relative;
+    top: 230px;
+    color: white;
+    font-family: Lush;
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: 13px;
+    text-shadow: 5px 5px 1px black;
+}
+.banner .slide2 h2{
+    position: relative;
+    top: 300px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    text-shadow: 5px 5px 1px white;
+}
+.swiper-button-prev{
+    width: 500px;
+    height: 500px;
+    top: 13%;
+    background-image: url(imgs/left_shadow.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30px;
+}
+.swiper-button-next{
+    width: 500px;
+    height: 500px;
+    top: 13%;
+    background-image: url(imgs/right_shadow.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 348px;
+}
+
+
+/* section main_more */
+
+.main_second{
+    width: 100%;
+    height: 450px;
+    padding-top: 150px;
+}
+.main_more_wrapper{
+    width: 1500px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+.main_more_wrapper > div{
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    margin: 0 30px;
+    position: relative;
+}
+/* .main_more_code > a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+} */
+.main_more_wrapper a{
+    width: 400px;
+    height: 120px;
+    /* background-color: rgb(0, 0, 0, 0.5); */
+    position: absolute;
+    bottom: 0;
+}
+.main_more_wrapper div a:link{
+    color: white; text-decoration: none;
+}
+.main_more_wrapper div a:visited{
+    color:white; text-decoration: none;
+}
+/* .main_more_wrapper li a:hover{
+    color: white; 
+    text-decoration: underline;
+} */
+/* .main_more_code > a > h1{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-family: Lush;
+    font-size: 25px;
+    border: 2px solid white;
+    padding-top: 15px;
+    position: absolute;
+    left: 35%;
+    bottom: 22px;
+    text-shadow: 1px 1px 1px black;
+} */
+/* .main_more_wrapper div a h1:hover{
+    background-color: rgb(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid white;
+    /* opacity: 3;
+}*/
+.main_more_code{
+    background-image: url(imgs/sale.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.main_more_shop{
+    background-image: url(imgs/lushnewgiftset.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+}
+.main_more_read{
+    background-image: url(imgs/lushnaked.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+/* .main_more_code ~div{
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    background-image: url(imgs/brush.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+.main_more_code p{
+    padding-top: 20px;
+    padding-left: 15px;
+    line-height: 57px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: WHITE;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: oblique;
+    text-shadow: 5px 2px 1px BLACK;
+    /* transform: skew(10deg,-10deg); 
+    background-image: url(imgs/brush.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-y: 135px;
+    background-position-x: 35px; */
+    /* text-shadow: 2px 2px 0px cornflowerblue; */
+}
+.main_more_shop h2{
+    padding-top: 20px;
+    padding-left: 15px;
+    line-height: 57px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: WHITE;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: oblique;
+    text-shadow: 5px 2px 1px BLACK;
+    /* transform: skew(10deg,-10deg);
+    background-image: url(imgs/brush2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-y: 142px;
+    background-position-x: 21px; */
+} 
+.main_more_read h2{
+    padding-top: 50px;
+    padding-left: 15px;
+    line-height: 57px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: WHITE;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: oblique;
+    text-shadow: 5px 2px 1px BLACK;
+}
+.main_more_shop > a > h1,
+.main_more_read > a > h1,
+.main_more_code > a > h1{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-weight: 80px;
+    letter-spacing: 2px;
+    border: 3px solid white;
+    padding-top: 15px;
+    position: absolute;
+    left: 20%;
+    bottom: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.main_more_wrapper a > h1:hover{
+    border: 3px solid black;
+    color: black;
+    background-color: rgba( 255, 255, 255, 0.2 );
+}
+/* .newcircle{
+    position: absolute;
+    top: 117px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: black;    
+}
+.newcircle h1{
+    padding-top: 18px;
+    color: white;
+    font-family: Lush;
+    font-size: 15px;
+    text-align: center;
+}*/
+
+/* section main_best */
+
+.main_best{
+    width: 1252px;
+    height: 600px;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+.best_textbox{
+    width: auto;
+    height: 26px;
+    margin: 0 auto;
+    text-align: center;
+}
+.best_text{
+    font-family: Lush;
+    font-size: 70px;
+    line-height: 25px;
+    color: black;
+}
+.swiper-container .bestlist{
+    width: 1252px;
+    height:420px;
+    border-radius:7px;
+    overflow: visible;
+}
+.bestlist .swiper-slide{
+    padding-top: 100px;
+    width: 313px;
+    height: 410px;
+    text-align:center;
+    display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.bestlist .slide img {
+    padding-bottom: 10px;
+    max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+}
+.bestlist .slide h1{
+    border-bottom: 1px solid gainsboro;
+}
+.bestlist .slide h2{
+    height: 35px;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+    margin-top: -10px;
+    padding-bottom: 7px;
+}
+.bestlist .slide > p{
+    padding-top: 2px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+}
+.addtocart{
+    width: 150px;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+.addtocart:hover,
+.addtocart:hover .addtocart_cart +p{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.addtocart:hover .addtocart_cart{
+    background-position-y: 8px;
+}
+.addtocart_cart{
+    width: 25px;
+    height: 50px;
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/basket-main.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -417px;
+    position: absolute;
+    left: 32%;
+}
+.addtocart_cart + P{
+    width: 85px;
+    position: absolute;
+    left: 42%;
+    top: 448px;
+    color: black;
+    font-weight: 700;
+}
+.best-pagination{
+    width: 100%;
+    position: relative;
+    z-index : 1000;
+    text-align: center;
+    top: 20px !important; 
+    /* margin-bottom: 5px; */
+    left: 0% !important;/* css 이후에 생기므로 important 필요 */
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #0f0f0f;
+}
+/* .best-button-prev{
+    width: 300px;
+    height: 300px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+    top: -370px;
+    left: -200px;
+    background-image: url(imgs/leftblack.png);
+    background-size: 25%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.best-button-next{
+    width: 300px;
+    height: 300px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+    top: -670px;
+    left: 1132px;
+    background-image: url(imgs/rightblack.png);
+    background-size: 25%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+} */
+
+/* section main_get */
+
+.main_get{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: aquamarine;
+    position: relative;
+    background-image: url(imgs/bath_bomb_lightbox_landscape.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.get_txt1{
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: black;
+    font-family: Alliance;
+    font-size: 80px;
+    text-align: center;
+    margin-left: -500px;
+    margin-top: -155px;
+}
+.get_txt2{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: black;
+    font-family: Lush;
+    font-size: 45px;
+    text-align: center;
+    margin-left: -250px;
+    margin-top: -72px;
+}
+.getyours{
+    width: 270px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: black;
+    border: black solid 3px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: 70px;
+    padding-bottom: 3px;
+}
+.getyours:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    border: white solid 3px;
+}
+/* section main_media */
+
+
+.main_media{
+    width: 1400px;
+    height: 355px;
+    margin: 25px auto;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.media_ytb{
+    width: 600px;
+    height: 352px;
+    /* background-color: dodgerblue;
+    border: 1px solid black; */
+}
+.media_evt1{
+    width: 352px;
+    height: 352px;
+    background-image: url(imgs/event1_.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%; 
+    background-position: center;
+}
+.media_evt1 > a > div{
+    width: 352px;
+    height: 352px;
+}
+.media_evt2{
+    height: 352px;
+    width: 352px;
+    /* background-color: olivedrab; */
+    /* border: 1px solid black; */
+    margin-left: -30px;
+    background-image: url(imgs/charitypot.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%; 
+    background-position: center;
+    text-shadow: 0.2px 0.2px 5px gray;
+}
+.media_evt2 h1{
+    font-family: Lush;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+.media_evt2 h2{
+    font-family: Alliance;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    top: 37%;
+    padding: 0 4px;
+}
+/* section main_lovelush */
+
+.main_lovelush{
+    width: 1252px;
+    height: 160px;
+    margin: 0 auto;
+    padding-top: 120px;
+    position: relative;
+}
+.lovelush_txt{
+    width: 1252px;
+    height: 40px;
+    color: black;
+    font-family: Lush;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.sharelush{
+    width: 1252px;
+    height: 35px;
+    color: black;
+    font-family: Alliance;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+.sns_logos{
+    width: 1252px;
+    height: 50px;
+    display: flex;
+    padding-top: 50px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -135px;
+}
+.sns_logos div{
+    width: 45px;
+    height: 45px;
+    /* border: 1px solid black; */
+    margin: 0 10px;
+    border-radius: 20%;
+}
+.sns_logos .fb{
+    background-image: url(imgs/fbicon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.sns_logos .insta{
+    background-image: url(imgs/instaicon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.sns_logos .twit{
+    background-image: url(imgs/twiticon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.sns_logos .kakao{
+    background-image: url(imgs/kakaoicon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* LOVE LUSH PHOTOS */
+
+/* 
+.lovelush_pt{
+    width: 300%;
+    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.lovelush_pt div{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    display: inline-block;
+    margin: 30px 0 0 60px;
+}
+.lovelush_pt div img{
+    width: 200px;
+    height: 200px;
+    size: 110%;
+} */
+
+.lovelush_pt{
+    width : 100%;
+    margin : 0 auto;
+    height : 260px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 80px;
+}
+.lovelush_wrapper{
+    display: flex;
+    position: absolute;
+    left : 0;
+}
+.lovelush_wrapper img{
+    width : 260px;
+    height : 260px;
+}
+
+/* footer  */
+
+.footer_wrapper{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+.footer_icons{
+    width: 1252px;
+    height: 171px;
+    background-image: url(https://uk.lush.com/sites/all/themes/lush/assets/lush/images/sprites/footer-icon-sprite.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    margin-left: -550px;
+    margin-top: 10px;
+  }
+.footer_info{
+    width: 100%;
+    height: 417px;
+    background-color: black;
+    color: white;
+}
+.footer_info_wrpper{
+    width: 1252px;
+    height: 417px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+.footer_info_wrpper ul{
+    list-style: none;
+    display: flex;
+    padding: 50px 0 0 50px;
+}
+.footer_info_wrpper li{
+    font-family: Alliance;
+    padding: 0 50px;
+    line-height: 30px;
+}
+.footer_info_wrpper h4{
+    font-weight: 900;
+    font-size: 20px;
+}
+.footer_info_wrpper p{
+    font-weight: 500;
+    font-size: 15px;
+    color: gray;
+}
+.footer_info_wrpper li > div{
+    width: 300px;
+    height: 48px;
+    margin-top: 25px;
+    background-size: 100% auto;
+    background-color: white;
+    background-image: url(imgs/footer_info.png);
+    background-repeat: no-repeat;
+}

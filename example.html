@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            var html = "";
+            var list = "";
+            var product = [
+                {"id":1, "name":"과자1","price":1000, "src":"img/image1.jpg"},
+                {"id":2, "name":"과자2","price":2000},
+                {"id":3, "name":"과자3","price":3000},
+                {"id":4, "name":"과자4","price":4000},
+                {"id":5, "name":"과자6","price":5000}
+            ];
+
+            for(var i in product){
+                list = `
+                    <div>`+product[i].name+`</div>
+                    <img src ="`+product[i].src+`"</div>
+                    <div>`+product[i].price+`원</div>
+                `;
+
+                html = html + list;
+            }
+
+            $("#pdt").html(html);
+        })
+    </script>
+    <div id="pdt"></div>
+</body>
+</html>
